@@ -1,18 +1,15 @@
+INSERT INTO Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) VALUES
+(1, 'Indira Breawood', 'Indira', 'Breawood', '2/22/2002', 'sT5">UF?Qy@v)', '9/29/2023');
+(2, 'Willie Phillipps', 'Willie', 'Phillipps', '12/29/2004', 'iJ6#t2EyZ!w\l`=A', '9/2/2024');
+(3, 'Lizabeth Bentjens', 'Lizabeth', 'Bentjens', '3/14/1990', 'oM0>)}&"C{Wso', '11/23/2023');
+(4, 'Lavinie Gaines', 'Lavinie', 'Gaines', '1/18/2002', 'vO5,S~U''UBB_z', '4/13/2024');
+(5, 'Roosevelt Perschke', 'Roosevelt', 'Perschke', '9/26/1988', 'jI8=#%|B0{Bj%Q', '12/14/2023');
+(6, 'Lexi Stoven', 'Lexi', 'Stoven', '7/11/1983', 'zB6/FZ9x#', '10/16/2023');
+(7, 'Kristyn Bolt', 'Kristyn', 'Bolt', '7/28/2000', 'fK3)_aoLOu1uZ?''N', '8/7/2024');
+(8, 'Cary Seller', 'Cary', 'Seller', '7/2/1982', 'mD7\f0x_|)cUOpb', '7/31/2024');
+(9, 'Reta Dominey', 'Reta', 'Dominey', '5/30/1979', 'yJ3&e%#>vRP?eZ', '3/29/2024');
+(10, 'Karel Kingerby', 'Karel', 'Kingerby', '2/25/1985', 'zY6#125_', '12/22/2023');
 
-
-
-
-
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (1, 'Indira Breawood', 'Indira', 'Breawood', '2/22/2002', 'sT5">UF?Qy@v)', '9/29/2023');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (2, 'Willie Phillipps', 'Willie', 'Phillipps', '12/29/2004', 'iJ6#t2EyZ!w\l`=A', '9/2/2024');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (3, 'Lizabeth Bentjens', 'Lizabeth', 'Bentjens', '3/14/1990', 'oM0>)}&"C{Wso', '11/23/2023');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (4, 'Lavinie Gaines', 'Lavinie', 'Gaines', '1/18/2002', 'vO5,S~U''UBB_z', '4/13/2024');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (5, 'Roosevelt Perschke', 'Roosevelt', 'Perschke', '9/26/1988', 'jI8=#%|B0{Bj%Q', '12/14/2023');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (6, 'Lexi Stoven', 'Lexi', 'Stoven', '7/11/1983', 'zB6/FZ9x#', '10/16/2023');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (7, 'Kristyn Bolt', 'Kristyn', 'Bolt', '7/28/2000', 'fK3)_aoLOu1uZ?''N', '8/7/2024');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (8, 'Cary Seller', 'Cary', 'Seller', '7/2/1982', 'mD7\f0x_|)cUOpb', '7/31/2024');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (9, 'Reta Dominey', 'Reta', 'Dominey', '5/30/1979', 'yJ3&e%#>vRP?eZ', '3/29/2024');
-insert into Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) values (10, 'Karel Kingerby', 'Karel', 'Kingerby', '2/25/1985', 'zY6#125_', '12/22/2023');
 
 
 
