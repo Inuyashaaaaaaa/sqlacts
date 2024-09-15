@@ -1,7 +1,7 @@
 --Select all users who are born between January 1, 2000 and December 31, 2004
 SELECT *
 FROM Users
-WHERE DateOfBirth BETWEEN '2000-01-01' AND '2004-12-31';
+WHERE DateOfBirth BETWEEN '01/01/2000' AND '12/31/2004';
 
 --Select all the posts written by the user with a user_id of 4.
 SELECT *
