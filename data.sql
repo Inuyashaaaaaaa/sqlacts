@@ -1,3 +1,63 @@
+
+
+
+-- Creating the Users table
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    Username VARCHAR(255) NOT NULL,
+    FirstName VARCHAR(255),
+    LastName VARCHAR(255),
+    DateOfBirth DATE,
+    Password VARCHAR(255) NOT NULL,
+    DateAdded TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Creating the Friends table
+CREATE TABLE Friends (
+    FriendID INT PRIMARY KEY,
+    FriendWhoAdded INT NOT NULL,
+    FriendBeingAdded INT NOT NULL,
+    IsAccepted BOOLEAN DEFAULT FALSE,
+    DateAdded TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (FriendWhoAdded) REFERENCES Users(UserID),
+    FOREIGN KEY (FriendBeingAdded) REFERENCES Users(UserID)
+);
+
+-- Creating the Groups table
+CREATE TABLE Groups (
+    GroupID INT PRIMARY KEY,
+    GroupName VARCHAR(255) NOT NULL,
+    CreatedBy INT NOT NULL,
+    DateAdded TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (CreatedBy) REFERENCES Users(UserID)
+);
+
+-- Creating the Posts table
+CREATE TABLE Posts (
+    PostID INT PRIMARY KEY,
+    PostDescription VARCHAR(255),
+    PostedBy INT NOT NULL,
+    IsPublic BOOLEAN DEFAULT TRUE,
+    IsOnlyForFriends BOOLEAN DEFAULT FALSE,
+    GroupID INT,
+    DatePosted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (PostedBy) REFERENCES Users(UserID),
+    FOREIGN KEY (GroupID) REFERENCES Groups(GroupID)
+);
+
+-- Creating the Group Membership Requests table
+CREATE TABLE GroupMembershipRequests (
+    GroupMembershipRequestsID INT PRIMARY KEY,
+    GroupID INT NOT NULL,
+    GroupMemberUserID INT NOT NULL,
+    IsGroupMembershipAccepted BOOLEAN DEFAULT FALSE,
+    DateAccepted TIMESTAMP,
+    FOREIGN KEY (GroupID) REFERENCES Groups(GroupID),
+    FOREIGN KEY (GroupMemberUserID) REFERENCES Users(UserID)
+);
+
+
+
 INSERT INTO Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) VALUES
 (1, 'Indira Breawood', 'Indira', 'Breawood', '2/22/2002', 'sT5">UF?Qy@v)', '9/29/2023');
 (2, 'Willie Phillipps', 'Willie', 'Phillipps', '12/29/2004', 'iJ6#t2EyZ!w\l`=A', '9/2/2024');
