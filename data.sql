@@ -1,4 +1,6 @@
-
+DROP TABLE Customers;
+DROP TABLE Orders;
+DROP TABLE Shippings;
 
 
 -- Creating the Users table
@@ -58,22 +60,21 @@ CREATE TABLE GroupMembershipRequests (
 
 
 
-INSERT INTO Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) VALUES
-(1, 'Indira Breawood', 'Indira', 'Breawood', '2/22/2002', 'sT5">UF?Qy@v)', '9/29/2023');
-(2, 'Willie Phillipps', 'Willie', 'Phillipps', '12/29/2004', 'iJ6#t2EyZ!w\l`=A', '9/2/2024');
-(3, 'Lizabeth Bentjens', 'Lizabeth', 'Bentjens', '3/14/1990', 'oM0>)}&"C{Wso', '11/23/2023');
-(4, 'Lavinie Gaines', 'Lavinie', 'Gaines', '1/18/2002', 'vO5,S~U''UBB_z', '4/13/2024');
-(5, 'Roosevelt Perschke', 'Roosevelt', 'Perschke', '9/26/1988', 'jI8=#%|B0{Bj%Q', '12/14/2023');
-(6, 'Lexi Stoven', 'Lexi', 'Stoven', '7/11/1983', 'zB6/FZ9x#', '10/16/2023');
-(7, 'Kristyn Bolt', 'Kristyn', 'Bolt', '7/28/2000', 'fK3)_aoLOu1uZ?''N', '8/7/2024');
-(8, 'Cary Seller', 'Cary', 'Seller', '7/2/1982', 'mD7\f0x_|)cUOpb', '7/31/2024');
-(9, 'Reta Dominey', 'Reta', 'Dominey', '5/30/1979', 'yJ3&e%#>vRP?eZ', '3/29/2024');
+-- Inserting Users table
+INSERT INTO Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password, DateAdded) VALUES 
+(1, 'Indira Breawood', 'Indira', 'Breawood', '2/22/2002', 'sT5">UF?Qy@v)', '9/29/2023'),
+(2, 'Willie Phillipps', 'Willie', 'Phillipps', '12/29/2004', 'iJ6#t2EyZ!w\\l`=A', '9/2/2024'),
+(3, 'Lizabeth Bentjens', 'Lizabeth', 'Bentjens', '3/14/1990', 'oM0>)}&"C{Wso', '11/23/2023'),
+(4, 'Lavinie Gaines', 'Lavinie', 'Gaines', '1/18/2002', 'vO5,S~U''UBB_z', '4/13/2024'),
+(5, 'Roosevelt Perschke', 'Roosevelt', 'Perschke', '9/26/1988', 'jI8=#%|B0{Bj%Q', '12/14/2023'),
+(6, 'Lexi Stoven', 'Lexi', 'Stoven', '7/11/1983', 'zB6/FZ9x#', '10/16/2023'),
+(7, 'Kristyn Bolt', 'Kristyn', 'Bolt', '7/28/2000', 'fK3)_aoLOu1uZ?''N', '8/7/2024'),
+(8, 'Cary Seller', 'Cary', 'Seller', '7/2/1982', 'mD7\\f0x_|)cUOpb', '7/31/2024'),
+(9, 'Reta Dominey', 'Reta', 'Dominey', '5/30/1979', 'yJ3&e%#>vRP?eZ', '3/29/2024'),
 (10, 'Karel Kingerby', 'Karel', 'Kingerby', '2/25/1985', 'zY6#125_', '12/22/2023');
 
-
-
-
-INSERT INTO Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) VALUES
+-- Inserting Friends table
+INSERT INTO Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) VALUES 
 (1, 1, 2, TRUE, '9/30/2023'),
 (2, 2, 3, FALSE, '9/3/2024'),
 (3, 3, 4, TRUE, '12/1/2023'),
@@ -85,8 +86,8 @@ INSERT INTO Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, Dat
 (9, 9, 10, TRUE, '4/1/2024'),
 (10, 10, 1, TRUE, '12/23/2023');
 
-
-INSERT INTO Groups (GroupID, GroupName, CreatedBy, DateAdded) VALUES
+-- Inserting Groups table
+INSERT INTO Groups (GroupID, GroupName, CreatedBy, DateAdded) VALUES 
 (1, 'PE Club', 1, '10/1/2023'),
 (2, 'Book Club', 2, '10/1/2023'),
 (3, 'Netpliks and Nood langz', 3, '10/1/2023'),
@@ -98,10 +99,8 @@ INSERT INTO Groups (GroupID, GroupName, CreatedBy, DateAdded) VALUES
 (9, 'Music Club', 9, '10/1/2023'),
 (10, 'Art Club', 10, '10/1/2023');
 
-
-
-
-INSERT INTO Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) VALUES
+-- Inserting Posts table
+INSERT INTO Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) VALUES 
 (1, 'Ganda ng movie besh!', 3, TRUE, FALSE, 3, '12/3/2023'),
 (2, 'Art appreciation week', 10, TRUE, FALSE, 10, '12/25/2023'),
 (3, 'gala lang sa campus #firstday', 6, TRUE, FALSE, 6, '10/19/2023'),
@@ -113,9 +112,8 @@ INSERT INTO Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends
 (9, 'Sino metal music fan d2???', 9, FALSE, TRUE, 9, '4/3/2024'),
 (10, 'Nanood na nga lang ako ng food vlog nag crave pa ako ng pagkain lol', 7, FALSE, TRUE, 7, '8/10/2024');
 
-
-
-INSERT INTO GroupMembershipRequests (GroupMembershipRequestsID, GroupID, GroupMemberUserID, IsGroupMembershipAccepted, DateAccepted) VALUES
+-- Inserting GroupMembershipRequests table
+INSERT INTO GroupMembershipRequests (GroupMembershipRequestsID, GroupID, GroupMemberUserID, IsGroupMembershipAccepted, DateAccepted) VALUES 
 (1, 6, 2, TRUE, '10/2/2023'),
 (2, 3, 8, TRUE, '8/11/2024'),
 (3, 5, 1, TRUE, '12/26/2023'),
@@ -126,4 +124,3 @@ INSERT INTO GroupMembershipRequests (GroupMembershipRequestsID, GroupID, GroupMe
 (8, 8, 5, TRUE, '4/17/2024'),
 (9, 4, 10, TRUE, '4/4/2024'),
 (10, 10, 3, FALSE, NULL);
-
