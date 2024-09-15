@@ -76,13 +76,13 @@ INSERT INTO Users (UserID, UserName, FirstName, LastName, DateOfBirth, Password,
 -- Inserting Friends table
 INSERT INTO Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) VALUES 
 (1, 1, 2, TRUE, '9/30/2023'),
-(2, 2, 3, FALSE, '9/3/2024'),
+(2, 2, 3, TRUE, '9/3/2024'),
 (3, 3, 4, TRUE, '12/1/2023'),
 (4, 4, 5, TRUE, '4/14/2024'),
-(5, 5, 6, FALSE, '12/15/2023'),
+(5, 5, 6, TRUE, '12/15/2023'),
 (6, 6, 7, TRUE, '10/17/2023'),
 (7, 7, 8, TRUE, '8/8/2024'),
-(8, 8, 9, FALSE, '8/1/2024'),
+(8, 8, 9, TRUE, '8/1/2024'),
 (9, 9, 10, TRUE, '4/1/2024'),
 (10, 10, 1, TRUE, '12/23/2023');
 
